@@ -3,6 +3,19 @@ addEventListener("keydown", function (event) {
     search();
   }
 });
+
+function tooltogive(min, max) {
+  var num = Math.floor(Math.random() * (max - min + 1)) + min;
+  if (num === 1) {
+    return "https://copilot.microsoft.com/: unblocked AI";
+  } else if (num === 2) {
+    return "https://www.gogoprivate.com: unblocked search engine";
+  } else if (num === 3) {
+    return "https://www.terabox.com/login: unblocked cloud storage";
+  }
+}
+
+var gettool = tooltogive(1, 3);
 function displaySE() {
   var currentSE = document.getElementById("SE");
   var se = currentSE[currentSE.selectedIndex].id;
